@@ -5,10 +5,12 @@ on:
 
 jobs:
   primero:
-    runs-on: $RUNS_ON
+    name: primero
+    runs-on: ${{ vars.RUNS_ON }}
     steps:
-      - run: echo "soy $RUNS_ON"
+      - run: echo "soy ${{ vars.RUNS_ON }}"
   segundo:
-    runs-on: $RUNS_ON
+    name: segundo
+    runs-on: ${{ vars.RUNS_ON }}
     steps:
-      - run: echo "soy $RUNS_ON"
+      - run: echo "soy ${{ vars.RUNS_ON }}"
