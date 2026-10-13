@@ -1,0 +1,14 @@
+name: ejercicios
+
+on:
+  workflow_dispatch:
+
+jobs:
+  primero:
+    runs-on: $RUNS-ON
+    steps:
+      - run: echo "soy $RUNS-ON"
+  segundo:
+    runs-on: $RUNS-ON
+    steps:
+      - run: echo "soy $RUNS-ON"
