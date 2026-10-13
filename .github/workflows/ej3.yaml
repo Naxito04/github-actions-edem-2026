@@ -4,10 +4,11 @@ on:
   workflow_dispatch:
 
 jobs:
-  name: matrix
-  strategy:
-    matrix:
-      py: [python-3.11, python-3.12]
-  runs-on: ${{ matrix.py }}
-  steps:
-    - run: echo "soy ${{ matrix.py }}" 
+  matrix-job:
+    name: matrix
+    runs-on: ${{ matrix.py }}
+    strategy:
+      matrix:
+        py: [python-3.11, python-3.12]
+    steps:
+      - run: echo "soy ${{ matrix.py }}"
