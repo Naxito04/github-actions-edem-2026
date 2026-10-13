@@ -3,10 +3,12 @@ name: login
 on:
   workflow_dispatch:
 
+
 jobs:
   login:
     name: login
     runs-on: ubuntu-latest
     steps:
-      - run: echo "la contraseña es: ${{ secrets.PASSWORD }}"
-  
+      - env:
+        PASSWORD: ${{ secrets.PASSWORD }}
+        run: echo "la contraseña es: $PASSWORD"
