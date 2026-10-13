@@ -5,10 +5,10 @@ on:
 
 jobs:
   primero:
-    runs-on: $RUNS-ON
+    runs-on: $RUNS_ON
     steps:
-      - run: echo "soy $RUNS-ON"
+      - run: echo "soy $RUNS_ON"
   segundo:
-    runs-on: $RUNS-ON
+    runs-on: $RUNS_ON
     steps:
-      - run: echo "soy $RUNS-ON"
+      - run: echo "soy $RUNS_ON"
