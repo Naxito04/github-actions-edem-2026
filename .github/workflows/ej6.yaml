@@ -9,6 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: deliverybot/json-validator@v1
+      - uses: kuhnroyal/gh-action-json-validator@v2
         with:
           path: "data.json"
