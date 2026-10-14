@@ -1,0 +1,14 @@
+name: ejercicio6
+
+on:
+  workflow_dispatch:
+
+jobs:
+  comprobacion:
+    name: json
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: deliverybot/json-validator@v1
+        with:
+          path: "data.json"
