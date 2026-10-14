@@ -1,0 +1,25 @@
+name: ejercicio4
+
+on:
+  workflow_dispatch:
+
+jobs:
+  primero:
+    name: subir
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hola soy job 1" >> mensaje.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: artefacto
+          path: mensaje.txt
+  segundo:
+    name: bajar
+    runs-on: ubuntu-latest
+    needs: primero
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: artefacto
+          path: art/ 
+      - run: cat art/mensaje.txt

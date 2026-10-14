@@ -1,4 +1,4 @@
-name: ejercicios
+name: ejercicio1
 
 on:
   workflow_dispatch:

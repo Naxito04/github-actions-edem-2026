@@ -1,14 +1,13 @@
-name: login
+name: ejercicio2
 
 on:
   workflow_dispatch:
-
 
 jobs:
   login:
     name: login
     runs-on: ubuntu-latest
-    steps:
-      - env:
+    env:
         PASSWORD: ${{ secrets.PASSWORD }}
-        run: echo "la contraseña es: $PASSWORD"
+    steps:
+      - run: echo "la contraseña es: $PASSWORD"
