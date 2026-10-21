@@ -40,7 +40,7 @@ jobs:
 
       - name: Ejecucion scprit
         if: ${{ github.event.inputs.Test_de_Seguridad == 'true' }}
-        run: python script.py
+        run: python .github\workflows\script.py
 
   Job2:
     name: Procesamiento
