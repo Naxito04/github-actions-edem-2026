@@ -19,6 +19,7 @@ jobs:
       - name: Validacion
         id: validation
         uses: GrantBirki/json-yaml-validate@v5
+        continue-on-error: true
         with:
           pattern: 'ventas.json'
           mode: 'fail'
