@@ -1,0 +1,21 @@
+{
+  "tienda": "Sucursal Central",
+  "fecha": "2026-06-06",
+  "transacciones": [
+    {
+      "id": 101,
+      "producto": "Laptop Gamer",
+      "cantidad": 2,
+      "precio_unitario": 1200.50,
+      "total": 2401.00
+    },
+    {
+      "id": 102,
+      "producto": "Mouse Inalámbrico",
+      "cantidad": 5,
+      "precio_unitario": 25.00,
+      "total": 125.00
+    }
+  ],
+  "total_dia": 2526.00
+}

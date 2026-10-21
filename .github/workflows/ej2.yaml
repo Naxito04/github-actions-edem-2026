@@ -10,4 +10,4 @@ jobs:
     env:
       PASSWORD: ${{ secrets.PASSWORD }}
     steps:
-      - run: echo "la contraseña es: ${{ PASSWORD }}"
+      - run: echo "la contraseña es $PASSWORD"
