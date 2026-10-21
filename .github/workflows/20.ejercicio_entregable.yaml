@@ -24,11 +24,11 @@ jobs:
           mode: 'fail'
 
       - name: JSON Correcto
-        if: $ {{ steps.validation.outcome == 'success' }} 
+        if: ${{ steps.validation.outcome == 'success' }} 
         run: echo "EL JSON es valido"
 
       - name: JSON Incorrecto
-        if: $ {{ steps.validation.outcome == 'failure' }} 
+        if: ${{ steps.validation.outcome == 'failure' }} 
         run: echo "EL JSON no es valido"
 
       - name: Modo Test_de_Seguridad 
@@ -55,8 +55,8 @@ jobs:
       - name: Subir artefacto
         uses: actions/upload-artifact@v4
         with:
-          name:  artefacto_reporte_${{ matrix.entornos }}.txt
-          path:  reporte_${{ matrix.entornos }}.txt
+          name: artefacto_reporte_${{ matrix.entornos }}.txt
+          path: reporte_${{ matrix.entornos }}.txt
 
   Job3:
     name: Notificacion
