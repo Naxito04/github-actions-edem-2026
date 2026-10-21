@@ -1,5 +1,5 @@
 {
-  "tienda": "Sucursal Central",
+  "tienda": "Sucursal Central,
   "fecha": "2026-06-06",
   "transacciones": [
     {
@@ -16,6 +16,6 @@
       "precio_unitario": 25.00,
       "total": 125.00
     }
-  ],
+  ]
   "total_dia": 2526.00
 }
